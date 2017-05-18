@@ -1,0 +1,78 @@
+
+@import 'bourbon.scss';
+@import 'normalize.scss';
+
+html,
+body {
+  color: #323232;
+  background: #f8f8f8;
+  padding: 0;
+  margin: 0;
+  font-family: "BlinkMacSystemFont", "proxima-nova", "Helvetica Neue", "Calibri Light", "Roboto", "sans-serif";
+}
+
+header {
+  background: #2e294e;
+  height: 120px;
+  @include clearfix();
+}
+
+main {
+  padding: 40px;
+}
+
+h1 {
+  font-size: 20px;
+  float: right;
+  color: #ffffff;
+  margin: 36px 40px 8px 0;
+  font-weight: 300;
+}
+
+p {
+  font-size: 14px;
+  float: right;
+  clear: both;
+  color: #ffffff;
+  margin: 0 40px 8px 0;
+  font-weight: 300;
+}
+
+input {
+  margin: 0 0 40px 0;
+  background: #ffffff;
+  outline: none;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  color: #323232;
+  font-size: 16px;
+  width: 100%;
+}
+
+.logo {
+  position: absolute;
+  height: 100px;
+  width: 132px;
+  top: 40px;
+  left: 40px;
+  display: block;
+  background: url('../app-public/flickr.svg') no-repeat;
+  text-indent: -150%;
+  overflow: hidden;
+  background-size: contain;
+}
+
+.grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.grid-item {
+  padding: 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
